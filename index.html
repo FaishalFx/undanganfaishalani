@@ -85,7 +85,7 @@
 <!--Floating button-->
 <div id="floating-button" class="float">
 	<div class="control-center open">
-		<div class="audio-play loop">
+		<div class=" hidden audio-play loop">
 			<div data-video="CAKygaRZE8k" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
 		</div>
 		<!--<audio controls autoplay loop"">
@@ -420,7 +420,7 @@
 	function togglePlayButton1(play) {
 		document.getElementById("youtube-icon1").src = play ? "https://i.imgur.com/IDzX9gL.png" : "https://i.imgur.com/quyUPXN.png";
 	}
-
+	
 	function toggleAudio1() {
 		if ( player1.getPlayerState() == 1 || player1.getPlayerState() == 3 ) {
 			player1.pauseVideo();
